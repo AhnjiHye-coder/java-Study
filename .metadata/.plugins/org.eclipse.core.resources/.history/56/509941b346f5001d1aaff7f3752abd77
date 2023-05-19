@@ -1,0 +1,19 @@
+package operator;
+
+public class Ex01 {
+	// 논리 연산자 : && , ||, !
+	// boolean 타입의 값을 연산한다
+	// && : and, 서로 다른 두 조건이 모두 true이면 true를 나타낸다
+	// || : or,  서로 다른 두 조건 중 하나라도 true이면 true를 타나낸다
+	// !  : not, 단항 연산자이며 true는 false로 바꾸고, false는 true로 바꾼다
+	
+	public static void main(String[] args) {
+		boolean bo1 = true;
+		boolean bo2 = false;
+		
+		System.out.println("bo1 && bo2 :" + (bo1 && bo2));
+		System.out.println("bo1 && true :" + (bo1 && true));
+		System.out.println("bo1 || bo2 :" + (bo1 || bo2));
+		System.out.println("false || bo2 :" + (false || bo2));
+	}
+}

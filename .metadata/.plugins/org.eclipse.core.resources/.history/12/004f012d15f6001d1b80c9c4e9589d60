@@ -1,0 +1,24 @@
+package control;
+
+import java.util.Random;
+
+public class Ex02 {
+	public static void main(String[] args) {
+		Random ran = new Random();
+		
+		int num;
+		
+		num = ran.nextInt();
+		num %= 6;	// num의 값을 6으로 나눈 나머지를 저장한다
+		num += 1;	// num의 값을 1증가 시킨다
+		
+		
+		if(num > 0) {
+			System.out.println(num + ": 양의 정수");
+		}
+		if(num < 0 ) {
+			System.out.println(num + ": 음의 정수");
+		}
+		
+	}
+}

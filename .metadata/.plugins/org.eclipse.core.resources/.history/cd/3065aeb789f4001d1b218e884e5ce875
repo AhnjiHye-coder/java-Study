@@ -1,0 +1,21 @@
+package wrapperClass;
+
+public class Ex02 {
+	public static void main(String[] args) {
+		// Wrapper Class와 primitive type사이의 값 대입
+		
+		//Float과 long은 대표자료형이 아니므로, F혹은 L을 값 뒤에 붙여준다
+		float fl = 1.2F; 
+		double db = 0;
+		
+		db = fl;	// primitive type 끼리는 호환되므로, 대입이 가능하다
+					// 왼쪽 변수의 자료형이 더 크기 때문에 값의 손실이 없어서 암묵적 형변환이 발생한다
+		
+		System.out.println("fl : " + fl + ", db : " + db);
+		System.out.println();
+		
+		
+		
+		
+	}
+}

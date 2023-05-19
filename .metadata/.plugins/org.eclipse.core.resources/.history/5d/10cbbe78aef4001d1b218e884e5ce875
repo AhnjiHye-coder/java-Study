@@ -1,0 +1,42 @@
+package operator;
+
+public class Ex08 {
+	public static void main(String[] args) {
+		
+		// 비교 연산 : >, <, >=, <=, ==, !=
+		// 초과,미만,이상,이하,일치,불일치
+		// 두 값을 비교하여 결과를 boolean 형식(true/false)로 만들어낸다
+		
+		int n1 = 10;
+		int n2 = 3;
+		
+		System.out.println("n1 > n2  : " + (n1 > n2));
+		System.out.println("n1 < n2  : " + (n1 < n2));
+		System.out.println("n1 >= n2 : " + (n1 >= n2));
+		System.out.println("n1 <= n2 : " + (n1 <= n2));
+		System.out.println("n1 == n2 : " + (n1 == n2));
+		System.out.println("n1 != n2 : " + (n1 != n2));
+		System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+package operator;
+
+public class Ex08 {
+	public static void main(String[] args) {
+		
+		// 비교 연산 : >, <, >=, <=, ==, !=
+		// 초과,미만,이상,이하,일치,불일치
+		// 두 값을 비교하여 결과를 boolean 형식(true/false)로 만들어낸다
+		
+		int n1 = 10;
+		int n2 = 3;
+		
+		System.out.println("n1 > n2  : " + (n1 > n2));
+		System.out.println("n1 < n2  : " + (n1 < n2));
+		System.out.println("n1 >= n2 : " + (n1 >= n2));
+		System.out.println("n1 <= n2 : " + (n1 <= n2));
+		System.out.println("n1 == n2 : " + (n1 == n2));	// 일치(등호)
+		System.out.println("n1 != n2 : " + (n1 != n2));
+		System.out.println();
+		
+		// 변수활용 이유 : 나중에 재활용 하려고 사용함 
+		// 변수에 저장해두었다가 나중에활용 할 수 있다
+		// 별도의 자료형이 존재한다
+		
+		boolean b1 = n1 > n2;	
+		boolean b2 = n1 < n2;	
+		boolean b3 = n1 >= n2;	
+		boolean b4 = n1 <= n2;	
+		boolean b5 = n1 == n2;
+		boolean b6 = n1 != n2;
+		
+		// 비교연산에서 주의할 점!!
+		// 문자열은 ==로 일치여부를 판별하지 않는다
+		// 이유 : 
+		String s1 = "apple";
+		String s2 = "apple";
+		String s3 = new String("apple");
+		
+		System.out.println("s1 == s2" + (s1 == s2));
+		System.out.println("s2 == s3" + (s2 == s3));
+		System.out.println("s1 == s3" + (s1 == s3));
+		System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+

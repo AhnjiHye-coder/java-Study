@@ -1,0 +1,45 @@
+package control;
+
+import java.util.Scanner;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		// 제어문
+		// control statement
+		// 코드의 흐름을 분기하거나, 일정 구간을 반복하여 코드의 흐름을 제어하는 구문
+		
+		// 1) 분기문 : 조건에 따라서 서로 다른 코드를 실행 할 수 있다
+		// 2) 반복문 : 조건에 따라서 일정 구간의 코드를 반복 수행할 수 있다
+		// 3) 기타 제어문 : 반복을 중단하거나, 함수를 중단할 수 있다
+		
+		Scanner sc =  new Scanner(System.in);
+		
+		int select;
+		
+		System.out.println("1) 고민 시작");
+		
+		
+		System.out.println("2) 과제를 내 손으로 끝마친다");
+		
+		System.out.print("yes / no >>> ");
+		select = sc.nextInt();
+		
+		if(select == 1) {
+			System.out.println("오늘을 불태운다");
+		}
+		if(select == 2) {
+			System.out.println("내일 베끼고 지금은 잔다");
+		}
+		
+		System.out.println("4) 고민 해결");
+		sc.close();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

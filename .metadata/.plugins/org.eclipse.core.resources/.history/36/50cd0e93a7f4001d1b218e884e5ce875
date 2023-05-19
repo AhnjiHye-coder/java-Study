@@ -1,0 +1,17 @@
+package operator;
+
+public class Ex07 {
+	// 단항 증감 연산자 : 값을 1 증가 시키거나 감소시킨다
+	public static void main(String[] args) {
+		
+		int num = 10;
+		
+		System.out.println("num++ : " + num++);
+		System.out.println("++num : " + ++num);
+		System.out.println("--num : " + --num);
+		System.out.println("num-- : " + num--);
+		System.out.println();
+		System.out.println("num : " + num);
+		
+	}
+}

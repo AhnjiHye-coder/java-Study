@@ -1,0 +1,22 @@
+package operator;
+
+public class Ex05 {
+	// 산술 연산
+	
+	public static void main(String[] args) {
+		// 커서 줄을 아래로 복사하기 : ctrl + alt + ↑/↓
+		// 현재 커서 줄을 위치 이동하기 : alt + ↑/↓
+		
+		int n1 = 10;
+		int n2 = 3;
+		
+		System.out.println("n1 + n2 =  " + (n1 + n2));
+		System.out.println("n1 - n2 =  " + (n1 - n2));
+		System.out.println("n1 * n2 =  " + (n1 * n2));
+		System.out.println("n1 / n2 =  " + (n1 / n2));
+		System.out.println("n1 % n2 =  " + (n1 % n2));
+		System.out.println();
+		
+		
+	}
+}

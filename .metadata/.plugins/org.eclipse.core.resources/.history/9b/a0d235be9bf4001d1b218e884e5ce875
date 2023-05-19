@@ -1,0 +1,27 @@
+package operator;
+
+public class Ex05 {
+	// 산술 연산
+	
+	public static void main(String[] args) {
+		// 커서 줄을 아래로 복사하기 : ctrl + alt + ↑/↓
+		// 현재 커서 줄을 위치 이동하기 : alt + ↑/↓
+		
+		int n1 = 10;
+		int n2 = 3;
+		
+		System.out.println("n1 + n2 =  " + (n1 + n2));
+		System.out.println("n1 - n2 =  " + (n1 - n2));
+		System.out.println("n1 * n2 =  " + (n1 * n2));
+		System.out.println("n1 / n2 =  " + (n1 / n2));
+		System.out.println("n1 / (double)n2 =  " + (n1 / (double)n2));
+		System.out.println("n1 % n2 =  " + (n1 % n2));
+		System.out.println();
+		
+		// 1) + 연산자는 이항 연산이며, 양쪽 중 하나라도 String이 있다면 이어 붙이기를 수행한다
+		// 2) 산술 연산은 양쪽 자료형에 따라 결과의 자료형이 달라진다
+		//	     정수와 정수의 연산은 정수로 나타나고
+		//	     한쪽이라도 실수가 포함되면 겨로가는 실수로 나타난다
+		
+	}
+}

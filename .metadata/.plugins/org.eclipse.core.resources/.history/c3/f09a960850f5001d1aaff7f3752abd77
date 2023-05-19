@@ -1,0 +1,25 @@
+package operator;
+
+public class Ex03 {
+	public static void main(String[] args) {
+		// 삼항 연산자
+		// A ? B : C
+		// A 조건이 참이면 B값으로 결정하고, 아니면 C 값으로 결정한다
+		// 조건에 따라 서로 다른 값 중 하나를 결정짓는 연산자
+		
+		// if는 조건에 따라서 서로 다른 코드를 수행하는 것이 목적(행위)
+		// 삼항 연산자는 두개의 값 중 하나를 결정하는 것이 목적(값)
+		
+		int age = 25;
+		boolean isAdult = age >= 20;
+		
+		System.out.println(isAdult ?  "성인" : "미성년자");
+		
+		String adult = isAdult ? "성인" : "미성년자";
+		System.out.println("adult : " + adult);
+		
+		
+		
+		
+	}
+}
