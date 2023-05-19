@@ -1,0 +1,38 @@
+package output;
+
+public class Ex05 {
+	public static void main(String[] args) {
+		
+		// 메모리의 데이터를 화면에 출력하는 함수
+		System.out.print("A");		// 출력 후 줄을 바꾸지 않는다
+		System.out.println("B");	// 출력 후 한 줄 내린다
+		System.out.printf("C");		// 줄은 바꾸지 않고, 서식에 따른 출력을 할 수 있다
+		System.out.println();
+		
+		// print(), println()은 하나의 값만 출력할 수 있다
+		System.out.println("2 + 3 = " + (2 + 3));
+		
+		// printf()는 첫번째 항목에 문자열 서식을 지정한 후, 이후에 여러 값을 순서대로 지정한다
+		// 여기서 f는 포멧,서식,형식이라는 의미이다
+		// 포멧이랑 관련 된 것은 Disk Format , printf, print(".format(a));, <form>, </form>
+		System.out.printf("%s의 나이는 %d살 입니다\n", "이지은", 31);
+		
+		// 포멧의 의미,print'f'의 의미
+		// 디스크의 포멧은 디스크의 형식을 포멧한다는 의미이다
+		// 예) 감자를 심을때, 사과를 심을때 심는 면적이 다르다고 가정할 수 있는데
+		// 각 데이트 크기에 따라 포멧하는 방식이 다르다
+		// 어떤 용도인지의 따라서 포멧 방식이 다르다는 의미이다
+		// 디스크의 파일을 재설정하는 하는 것이 포멧이다
+		// 재설정 하기 때문에 이전에 파일,정보들이 지워지는 것이다
+		// 그래서 결과적으로 지워진다고 알고 있는 것이다
+		// 즉, printf()에서 f는 형식을 미리 준비해 놓고
+		// 빈칸의 넣는 값들을 재설정한다,바뀔 수 있다는 의미를 가지고 있다
+		
+		// printf()는 서식에 맞춰서 데이터를 출력한다
+		// String.fomat()은 서식에 맞춰서 문자열을 생성한다
+		
+		String data = String.format("%s의 나이는 %d살 입니다\n", "이지은", 31);
+		System.out.println("data : " + data);
+		
+	}
+}
