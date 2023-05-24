@@ -5,31 +5,33 @@ import java.io.*;
 public class Ex08 {
 	// 입력
 	public static void main(String[] args) throws IOException {
-		// 사용자의 입력 및 출력에서 다양한 예외 상황이 발생할 수 있어서 처리해주어야 한다
+		// 사용자의 입력 및 출력에서 다양한 예외 상황이 발생할 수 있어서 처러해주어야 한다
 		
 		int num;
 		System.err.println("에러 출력 스트림");
 		System.out.println("표준 출력 스트림");
-		System.out.println("글자 하나 입력(1바이트) : ");
+		System.out.println("글자하나 입력(1바이트)");
 		num = System.in.read();
 		System.in.read();
 		System.in.read();
 		
-		System.out.printf("num : %c, %d\n", num, num);
+		System.out.printf("num : %c, %d\n", num,num);
 		
 		int num2;
-		System.out.print("다시 한 글자 입력 (1바이트) : ");
+		System.out.print("다시 한 글자 입력(1바이트) : ");
 		num2 = System.in.read();
-		System.out.printf("num2 : %c, %d\n", num2, num2);
+		System.out.printf("num2 : %c, %d\n", num2,num2);
 		
 		
 		// 1바이트 입력객체를 기반으로 2바이트 단위 입력 객체를 생성
+		System.in.read();
 		InputStreamReader isr = new InputStreamReader(System.in);
 		System.out.print("한글자 입력(2바이트) : ");
 		int num3 = isr.read();
-		System.out.printf("num2 : %c, %d\n", num3, num3);
+		System.in.read();
+		System.out.printf("num3 : %c, %d", num3, num3);
 		
-		// 2바이트 입력객체를 기반으로 줄단위(버퍼단위)입력 객체를 생성
+		// 2바이트 입력객체를 기반으로 줄단위(퍼버단위)입력객체 생성
 		BufferedReader br = new BufferedReader(isr);
 		br.readLine();
 		
@@ -37,12 +39,8 @@ public class Ex08 {
 		String str = br.readLine();
 		System.out.println("str : " + str);
 		
-		// 위 과정을 간편화하고, 어느정도의 예외까지 내장 처리하게 만든 클래스가 Scanner
+		// 위 과정을 간편화하고, 어느정도 예외까지 내장 처리하게 만든 클래스가 Scanner
 		// Scanner를 이용하면 편리하게 입력받을 수 있다
-		
-		
-		
-		
 		
 		
 	}

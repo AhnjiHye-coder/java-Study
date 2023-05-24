@@ -5,43 +5,31 @@ import java.util.Scanner;
 public class Quiz4 {
 	public static void main(String[] args) {
 		// 생년월일을 8자리 정수로 입력 받아서
-		// 올해연도를 이용하여 나이를 계산하여 출력하기
-		// 출생 : yyyy - mm - dd
-		// 나이 : x살
+		// 올해년도를 이용하여 나이를 계산하여 출력하기
 		
-		int currentYear = 2023;
-		int birthYear;
-		int month;
-		int data;
-		int age;
+		int curren = 2023;
+		int birth, month, data, age;
 		
-		// 올해에서 내 년도 빼기하고  + 1 
+		// 올해에서 나의 년도 빼기하고 +1
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("생년월일 입력 (8자리) : ");
-		birthYear = sc.nextInt();
+		System.out.print("생년월일 입력(8자리):");
+		birth = sc.nextInt();
 		
+		data = birth % 100;
+		birth = birth / 100;
+		month = birth % 100;
+		birth = birth / 100;
 		
+		age = curren - birth + 1;
 		
-		data = birthYear % 100;
-		birthYear = birthYear / 100;
-//		birthYear /= 100;
-		month = birthYear % 100;
-		birthYear = birthYear / 100;
-//		birthYear /= 100;
+		System.out.println("생년월일 :"
+				+ birth + "년" + month
+				+ "월" + data + "일"
+						+ "\n"
+						+ "나이 : " + age);
 		
-		
-		age = currentYear - birthYear + 1;
-		
-//		System.out.println(data); //18
-//		System.out.println(month); // 12
-//		System.out.println(birthYear); // 98
-		
-		System.out.println("출생 : " + birthYear + "-" + month + "-" + data);
-		System.out.println("나이 : " + age);
-		
-		
-		
+		sc.close();
 	}
 }
